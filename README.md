@@ -1,4 +1,4 @@
-#Proyecto Vanilla JS 🐱‍👤
+# Proyecto Vanilla JS 🐱‍👤
 Hola!, este proyecto/plantilla no requiere Node.js o algún servidor como XAMPP, basta con descargarlo y abrirlo con tu navegador, aunque es muy recomendable que utilices VSCode junto con la extensión LiveServer para facilitar su uso.
 
 ## Acerca del proyecto
