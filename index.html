@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- nuestros estilos -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <div class="raiz">
+      <nav>
+        <h1>CodiGO App</h1>
+      </nav>
+      <div class="principal">
+        <main id="contenido">
+          <!-- aqui es donde irán nuestros productos-cards -->
+          <!-- <div class="tarjeta">
+                <div class="imagen">
+                  <img src="https://picsum.photos/400">
+                </div>
+                <div class="texto">
+                  <h4>Ceviche</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <div class="precio">
+                    <span>S/ 30</span>
+                    <button class="btn-agregar">
+                      Agregar
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+            
+        </main>
+      </div>
+    </div>
+
+    <div class="carrito">
+      <table>
+        <!-- table-head -->
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Cant.</th>
+            <th>P.U.</th>
+            <th>SubTotal</th>
+          </tr>
+        </thead>
+        <!-- table-body -->
+        <tbody id="tbody-carrito">
+          <!-- items de la boleta -->
+        </tbody>
+        <tfooter id="tfooter-carrito">
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+          </tr>
+        </tfooter>
+      </table>
+
+      <div class="resumen">
+        <table>
+          <tbody id="tbody-resumen">
+
+          </tbody>
+        </table>
+        <button id="btn-pagar">
+          PAGAR ORDEN
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

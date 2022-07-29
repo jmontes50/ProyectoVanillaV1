@@ -1,0 +1,151 @@
+:root{
+  --color-primario:#3277f6;
+  --color-secundario:#61646d;
+  --color-terciario:#A8A9B0;
+  --color-bg-primario:#f5f5f6;
+  --color-bg-secundario:#35373e;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size:calc(8px + 0.23vw);
+}
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+  padding:10px;
+}
+
+body{
+  display:flex;
+  max-height:100vh;
+}
+
+nav h1{
+  font-size:20px;
+}
+
+.raiz{
+  width:calc(100vw - 325px);
+}
+
+
+.raiz > nav {
+  height:54px;
+  padding:15px;
+  color:var(--color-secundario)
+}
+
+.principal{
+  background-color: var(--color-bg-primario);
+  display:flex;
+}
+
+.menu{
+  width:20%;
+}
+
+#contenido{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap:25px;
+  padding:25px 25px 25px 20px;
+}
+
+.imagen{
+  height:220px;
+  overflow:hidden;
+}
+
+.imagen > img{
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  min-height: 100%;
+}
+
+.texto{
+  padding:10px;
+  color:var(--color-secundario);
+}
+
+.texto *{
+  padding:2px;
+}
+
+.precio{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-agregar{
+  background-color: var(--color-primario);
+  color:white;
+  padding:10px;
+  border:none;
+}
+
+.carrito{
+  position:fixed;
+  right:0;
+  width:25%;
+  min-width:300px;
+  height:100vh;
+  background-color: var(--color-bg-secundario);
+  color: var(--color-terciario);
+  padding:10px;
+  overflow: scroll;
+}
+
+.carrito > table{
+  width:100%;
+  border-spacing: 0;
+}
+
+.carrito th,td{
+  padding:10px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-secundario);
+}
+
+.resumen > table{
+  width:100%;
+  border-spacing: 0;
+}
+
+#btn-pagar{
+  display:block;
+  margin:20px auto;
+  border-radius:10px;
+  width:90%;
+  height:70px;
+  color:white;
+  background-color: var(--color-primario);
+  border:0;
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+
+button:hover{
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+
+  #contenido{
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #contenido{
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+  }
+}
